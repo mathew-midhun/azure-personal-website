@@ -1,0 +1,81 @@
+{
+	"name": "azdeb_highest_grossing_movies",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AZDEB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "highest_grossing_movies.csv",
+				"container": "azde"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "Title",
+				"type": "String"
+			},
+			{
+				"name": "Movie Info",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Distributor",
+				"type": "String"
+			},
+			{
+				"name": "Budget (in $)",
+				"type": "String"
+			},
+			{
+				"name": "Domestic Opening (in $)",
+				"type": "String"
+			},
+			{
+				"name": "Domestic Sales (in $)",
+				"type": "String"
+			},
+			{
+				"name": "International Sales (in $)",
+				"type": "String"
+			},
+			{
+				"name": "World Wide Sales (in $)",
+				"type": "String"
+			},
+			{
+				"name": "Release Date",
+				"type": "String"
+			},
+			{
+				"name": "Genre",
+				"type": "String"
+			},
+			{
+				"name": "Running Time",
+				"type": "String"
+			},
+			{
+				"name": "License",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,34 @@
+{
+	"name": "dataflow_azde_casedata",
+	"properties": {
+		"activities": [
+			{
+				"name": "Data Flow Case Data",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "azde_case_data",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-09-26T19:54:04Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
