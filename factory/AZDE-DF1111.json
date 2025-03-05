@@ -1,9 +1,0 @@
-{
-	"name": "AZDE-DF1111",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "f85d02e3-c22a-46d2-ace7-26dfb053cfe1",
-		"tenantId": "af2a68a6-6eb3-4631-8c70-cf21b7f0aed4"
-	}
-}
